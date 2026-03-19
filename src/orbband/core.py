@@ -223,4 +223,4 @@ def get_popul(filename, orb_idx, orth_method):
     nl_labels = [re.sub(r'^\d+', '', l).lstrip() for l in nl_labels] # '0 V1 1s' -> 'V1 1s'
     
     pop = pop[orb_idx, :]
-    return pop, nl_labels
+    return pop, nl_labels, orb_idx
